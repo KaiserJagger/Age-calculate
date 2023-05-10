@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Karla:wght@200&family=Rampart+One&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <label>Fecha de nacimiento:</label>
+  <div class="input-group">
+    <label for="dia">Día:</label>
+    <input type="number" id="dia" min="1" max="31">
+
+    <label for="mes">Mes:</label>
+    <input type="number" id="mes" min="1" max="12">
+
+    <label for="anio">Año:</label>
+    <input type="number" id="anio" min="1900">
+  </div>
+  <button class="boton" onclick="calcularEdad()">Edad</button>
+
+  <div id="resultado">
+    <p id="anios"></p>
+    <p id="meses"></p>
+    <p id="dias"></p>
+  </div>
+
+</div>
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">kaiserjagger</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
